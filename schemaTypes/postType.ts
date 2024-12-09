@@ -10,12 +10,7 @@ export const postType = defineType({
     name: 'seo',
     }],
   fields: [
-    defineField({
-      name: 'seo',
-      title: 'SEO',
-      type: 'seo',
-      group: 'seo',
-    }),
+   
     defineField({
       name: 'title',
       type: 'string',
@@ -47,5 +42,11 @@ export const postType = defineType({
       type: 'reference',
       to: [{type: 'category'}],
     }),
+    defineField({
+        name: 'seo',
+        title: 'SEO',
+        type: 'seo',
+        group: 'seo',
+      }),
   ],
 })
